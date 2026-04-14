@@ -9,9 +9,10 @@
     <nav class="navbar">
       <button class="nav-btn" onclick="mostrarSecao('home')">Home</button>
       <button class="nav-btn" onclick="mostrarSecao('Cheats')">Cheats</button>
+      <button class="nav-btn" onclick="mostrarSecao('comentarios')">Comentários</button>
       <button class="nav-btn" onclick="mostrarSecao('Discord')">Discord</button>
+      <button class="nav-btn" onclick="mostrarSecao('github')">GitHub</button>
       <button class="nav-btn" onclick="mostrarSecao('portfolio')">Portfólio</button>
-       <button class="nav-btn" onclick="mostrarSecao('portfolio')">Portfólio</button>
     </nav>
 
     <div class="container">
@@ -24,31 +25,31 @@
         <div class="cheats-container">
           <div class="sidebar-cheats">
             <h3>Cheats</h3>
-            <button class="sidebar-btn" onclick="mostrarCheat('cheat CS2')">Cheat CS2</button>
-            <button class="sidebar-btn" onclick="mostrarCheat('Cheat Rust')">Cheat Rust</button>
-            <button class="sidebar-btn" onclick="mostrarCheat('Injector Roblox')">Injector Roblox</button>
-            <button class="sidebar-btn" onclick="mostrarCheat('Xeno Injector Roblox')">Xeno Injectors Roblox</button>
-            <button class="sidebar-btn" onclick="mostrarCheat('cheat5')">Cheat 5</button>
-            <button class="sidebar-btn" onclick="mostrarCheat('cheat6')">Cheat 6</button>
+            <button class="sidebar-btn" onclick="mostrarCheat('cheat CS2')">Cheats CS2</button>
+            <button class="sidebar-btn" onclick="mostrarCheat('Cheat Rust')">Cheats Rust</button>
+            <button class="sidebar-btn" onclick="mostrarCheat('Injector Roblox')">Injectors Roblox</button>
+            <button class="sidebar-btn" onclick="mostrarCheat('Xeno Injector Roblox')">Xeno Injector Roblox</button>
+            <button class="sidebar-btn" onclick="mostrarCheat('cheat5')">Cheats 5</button>
+            <button class="sidebar-btn" onclick="mostrarCheat('cheat6')">Cheats 6</button>
           </div>
           
           <div class="conteudo-cheats">
             <div id="cheat CS2" class="cheat-item">
-              <h2>Cheat CS2</h2>
+              <h2>Cheats CS2</h2>
               <p>Cheat for CS 2 - something that these days is looked by absolutely everyone. And it is true, once you played in CS2 you can not help but wonder how to download cheats for cs 2, because without them you can not simply play. There are different hacks for CS 2, both with cfg and without them, however, with our ExLoader website you will find both legit and rage hacks for hvh and legit games with legit cfg and rage configs. Of course all cs 2 hacks are virus free and many of them remain undetected from VAC ban! Even if you prefer console cheats for cs 2, you will still find what you are looking for. Our huge assortment will help you find a hack for cs 2 for any style of game. WH, AIM, Skinchanger, BHOP - an integral part of any quality cheat. Wallhack highlights enemies through walls, aimbot helps you with aiming, skinchanger replaces your default skins with cool free skins for cs 2, and bunnyhop helps with automatic jumps and auto strafes. Use of an injector such as GuidedHacking Injector for cs2 cheats is not needed, because they can be launched with help of ExLoader cheats loader (aka cs2 cheats launcher) (Unless we are talking about External cheats, as they, unlike internal cheats run without an injector). Rage cheat for cs 2 (also known as spinbot) is much cooler than console cheats for cs2, as it is designed for playing on hvh servers. Unlike other games, cs2 cheat-codes do not work in matchmaking, so you need some real cs2 hacks (like trainers) to play on community servers. Your desire to download cs 2 luno cheat, sharkhack cheat, osiris cs2, or Enigma cheat for cs 2 is totally natural, so we provide you with all free hacks for cs 2 without viruses on our site ExLoader!</p>
               <code>Good Luck</code>
               <button class="link-btn" onclick="window.open('https://en.exloader.net/tree/games/cs2/', '_blank')">Website</button>
             </div>
 
             <div id="Cheat Rust" class="cheat-item" style="display:none;">
-              <h2>Cheat Rust</h2>
+              <h2>Cheats Rust</h2>
               <p>Rust cheats - it's hard to imagine what it's like to play Rust Pirate without hacks. Shootouts at great distances, bases with multilayer buffer layers, stashes - interaction with all this is greatly simplified once you've tried to download cheats for Rust. Almost any free hack for rust from the ExLoader website includes all the useful features, such as aimbot to help with aiming, wh (wallhack) to highlight enemies or loot through the walls and of course bhop and movement for fast movement. Most of the cheats for rust on our site created as hacks for rust pirate or cheat for rust devblog. Rust devblog cheat is a cheat for an older version of Rust (for example devblog 236, devblog 216 or devblog 289), where you can play with simplified graphics for weak pc without loss of fps on community servers, while enjoying your cheat for Rust. Some mods can be used as a cheat for rust on your phone or a cheat for rust steam. Although cheats for Steam rust is quite rare due to the lack of function ‘Bypass EAC anti-cheat in rust’, sometimes you can still find them. Cheat for rust alkad and cheat for MagicRust can only be downloaded on our site, because we publish only verified cheats for rust without viruses that do not lead to a game ban! From now on hacks for rust should no longer be a problem, click download rust cheats and enjoy your new gameplay!</p>
               <code>Good Luck</code>
               <button class="link-btn" onclick="window.open('https://en.exloader.net/tree/games/rust/', '_blank')">Website</button>
             </div>
 
             <div id="Injector Roblox" class="cheat-item" style="display:none;">
-              <h2>Injector Roblox</h2>
+              <h2>Injectors Roblox</h2>
               <p>Best website for Roblox exploits, a developers community, and more from WeAreDevs</p>
               <code>Good Luck</code>
               <button class="link-btn" onclick="window.open('https://wearedevs.net/exploits', '_blank')">Website</button>
@@ -82,9 +83,126 @@
        <button class="link-btn" onclick="window.open('https://discord.gg/gnUbNVXsrE', '_blank')">Discord</button>
       </div>
 
+      <div id="comentarios" class="secao" style="display:none;">
+        <h1>💬 Comentários</h1>
+        <div class="comentarios-container">
+          <div class="form-comentario">
+            <input type="text" id="nomeUsuario" placeholder="Seu nome" maxlength="30" class="input-comentario">
+            <textarea id="textoComentario" placeholder="Deixe seu comentário aqui..." maxlength="500" class="textarea-comentario"></textarea>
+            <button class="btn-enviar" onclick="enviarComentario()">📤 Enviar Comentário</button>
+          </div>
+          
+          <div class="lista-comentarios" id="listaComentarios">
+            <p style="color: #b500fd; text-align: center;">Nenhum comentário ainda. Seja o primeiro! 😊</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="github" class="secao" style="display:none;">
+        <h1>🔗 GitHub</h1>
+        <div class="github-container">
+          <div class="github-card">
+            <div class="github-icon">
+              <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#b500fd" stroke-width="2">
+                <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -4.2 -3 -4.2 -2.9 0 -3.6 1.9 -3.6 3.6v2.1"></path>
+                <path d="M16 19h4v-12a6.5 6.5 0 0 0 -6.5 -6.5a6.5 6.5 0 0 0 -6.5 6.5v12h4"></path>
+                <circle cx="9.5" cy="9.5" r=".5" fill="#b500fd"></circle>
+                <circle cx="14.5" cy="9.5" r=".5" fill="#b500fd"></circle>
+              </svg>
+            </div>
+            <h2>Confira meu GitHub</h2>
+            <p>Veja todos os meus projetos, código e contribuições na plataforma GitHub.</p>
+            <button class="github-btn" onclick="window.open('https://github.com/Pakitojr', '_blank')">📁 Visitar GitHub</button>
+          </div>
+
+          <div class="github-info">
+            <h3>📊 Sobre meu GitHub</h3>
+            <ul class="github-list">
+              <li>🎯 Projetos diversos em várias linguagens</li>
+              <li>💻 Código aberto e bem documentado</li>
+              <li>⭐ Contribuições regulares</li>
+              <li>🚀 Trabalhos em desenvolvimento contínuo</li>
+              <li>📚 Learn more sobre minhas habilidades</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <div id="portfolio" class="secao" style="display:none;">
-        <h1>Meu Portfólio</h1>
-        <p>Conheça meus trabalhos e projetos</p>
+        <h1>🎨 Meu Portfólio</h1>
+        <div class="portfolio-container">
+          <div class="portfolio-card">
+            <div class="portfolio-icon">🎮</div>
+            <h3>Cheat CS2</h3>
+            <p>Desenvolvimento e manutenção de cheats para Counter-Strike 2 com detecção avançada.</p>
+            <div class="portfolio-tech">
+              <span class="tech-tag">C++</span>
+              <span class="tech-tag">Windows API</span>
+              <span class="tech-tag">Detecção</span>
+            </div>
+            <button class="portfolio-link" onclick="window.open('https://github.com', '_blank')">Ver Projeto</button>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-icon">⚙️</div>
+            <h3>Injector Roblox</h3>
+            <p>Ferramenta de injeção de scripts Lua com interface amigável para Roblox.</p>
+            <div class="portfolio-tech">
+              <span class="tech-tag">Lua</span>
+              <span class="tech-tag">Roblox</span>
+              <span class="tech-tag">UI/UX</span>
+            </div>
+            <button class="portfolio-link" onclick="window.open('https://github.com', '_blank')">Ver Projeto</button>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-icon">🌐</div>
+            <h3>Cravka Website</h3>
+            <p>Website responsivo com navegação dinâmica, comentários e integração de redes sociais.</p>
+            <div class="portfolio-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <button class="portfolio-link" onclick="window.open('https://github.com', '_blank')">Ver Projeto</button>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-icon">🔧</div>
+            <h3>Rust Exploit</h3>
+            <p>Exploração de vulnerabilidades em Rust com sistema de anti-cheat by-pass.</p>
+            <div class="portfolio-tech">
+              <span class="tech-tag">Rust</span>
+              <span class="tech-tag">Security</span>
+              <span class="tech-tag">Hacking</span>
+            </div>
+            <button class="portfolio-link" onclick="window.open('https://github.com', '_blank')">Ver Projeto</button>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-icon">💻</div>
+            <h3>Bot Discord</h3>
+            <p>Bot automático para Discord com sistema de moderação e comandos customizáveis.</p>
+            <div class="portfolio-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Discord.py</span>
+              <span class="tech-tag">Automação</span>
+            </div>
+            <button class="portfolio-link" onclick="window.open('https://github.com', '_blank')">Ver Projeto</button>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-icon">📱</div>
+            <h3>App Mobile</h3>
+            <p>Aplicativo mobile com recursos avançados e interface intuitiva.</p>
+            <div class="portfolio-tech">
+              <span class="tech-tag">React Native</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Mobile</span>
+            </div>
+            <button class="portfolio-link" onclick="window.open('https://github.com', '_blank')">Ver Projeto</button>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -108,8 +226,60 @@
         // Mostrar o cheat selecionado
         document.getElementById(cheat).style.display = 'block';
       }
+
+      function enviarComentario() {
+        const nome = document.getElementById('nomeUsuario').value.trim();
+        const texto = document.getElementById('textoComentario').value.trim();
+
+        if (nome === '' || texto === '') {
+          alert('Por favor, preencha nome e comentário!');
+          return;
+        }
+
+        // Pegar comentários existentes do localStorage
+        let comentarios = JSON.parse(localStorage.getItem('comentarios')) || [];
+
+        // Adicionar novo comentário
+        const novoComentario = {
+          nome: nome,
+          texto: texto,
+          data: new Date().toLocaleString('pt-BR')
+        };
+
+        comentarios.unshift(novoComentario); // Adiciona no começo
+        localStorage.setItem('comentarios', JSON.stringify(comentarios));
+
+        // Limpar campos
+        document.getElementById('nomeUsuario').value = '';
+        document.getElementById('textoComentario').value = '';
+
+        // Atualizar lista
+        carregarComentarios();
+      }
+
+      function carregarComentarios() {
+        const comentarios = JSON.parse(localStorage.getItem('comentarios')) || [];
+        const lista = document.getElementById('listaComentarios');
+
+        if (comentarios.length === 0) {
+          lista.innerHTML = '<p style="color: #b500fd; text-align: center;">Nenhum comentário ainda. Seja o primeiro! 😊</p>';
+          return;
+        }
+
+        lista.innerHTML = comentarios.map(com => `
+          <div class="comentario-item">
+            <div class="comentario-header">
+              <strong style="color: #c08bf0;">${com.nome}</strong>
+              <span class="comentario-data">${com.data}</span>
+            </div>
+            <p class="comentario-texto">${com.texto}</p>
+          </div>
+        `).join('');
+      }
+
+      // Carregar comentários ao abrir a página
+      window.addEventListener('load', carregarComentarios);
     </script>
  </body>
 </html>
-
 
