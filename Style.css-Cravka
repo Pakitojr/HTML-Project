@@ -10,6 +10,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  scroll-behavior: smooth;
 }
 
 body::before {
@@ -256,4 +257,363 @@ p {
 .conteudo-cheats::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(180deg, #c08bf0, #b500fd);
   box-shadow: 0 0 15px rgba(192, 139, 240, 0.8);
+}
+
+/* Seção de Comentários */
+.comentarios-container {
+  display: flex;
+  gap: 30px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.form-comentario {
+  background: linear-gradient(135deg, rgba(34, 34, 34, 0.9), rgba(181, 0, 253, 0.2));
+  border: 2px solid #b500fd;
+  border-radius: 12px;
+  padding: 25px;
+  flex: 1;
+  min-width: 300px;
+  box-shadow: 0 0 25px rgba(181, 0, 253, 0.4);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-comentario,
+.textarea-comentario {
+  background: rgba(20, 20, 20, 0.8);
+  border: 2px solid #b500fd;
+  color: #c08bf0;
+  padding: 12px 15px;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(181, 0, 253, 0.3);
+}
+
+.input-comentario::placeholder,
+.textarea-comentario::placeholder {
+  color: #b500fd;
+}
+
+.input-comentario:focus,
+.textarea-comentario:focus {
+  outline: none;
+  border-color: #c08bf0;
+  background: rgba(20, 20, 20, 0.95);
+  box-shadow: 0 0 20px rgba(181, 0, 253, 0.6);
+}
+
+.textarea-comentario {
+  min-height: 120px;
+  resize: vertical;
+  max-height: 200px;
+}
+
+.btn-enviar {
+  background: linear-gradient(135deg, #00ff88, #00dd77);
+  color: black;
+  border: 2px solid #00ff88;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.3s;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+}
+
+.btn-enviar:hover {
+  background: linear-gradient(135deg, #00dd77, #00ff88);
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.8);
+}
+
+.btn-enviar:active {
+  transform: scale(0.95);
+}
+
+.lista-comentarios {
+  background: linear-gradient(135deg, rgba(34, 34, 34, 0.9), rgba(192, 139, 240, 0.15));
+  border: 2px solid #b500fd;
+  border-radius: 12px;
+  padding: 25px;
+  flex: 1;
+  min-width: 300px;
+  box-shadow: 0 0 30px rgba(181, 0, 253, 0.3);
+  backdrop-filter: blur(10px);
+  overflow-y: auto;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.comentario-item {
+  background: rgba(20, 20, 20, 0.6);
+  border-left: 4px solid #b500fd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(181, 0, 253, 0.2);
+  animation: fadeIn 0.5s;
+}
+
+.comentario-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.comentario-data {
+  color: #00ff88;
+  font-size: 12px;
+  text-shadow: 0 0 5px rgba(0, 255, 136, 0.5);
+}
+
+.comentario-texto {
+  color: #c08bf0;
+  margin: 0;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+/* ScrollBar para lista de comentários */
+.lista-comentarios::-webkit-scrollbar {
+  width: 10px;
+}
+
+.lista-comentarios::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.lista-comentarios::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #b500fd, #c08bf0);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(181, 0, 253, 0.6);
+}
+
+.lista-comentarios::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #c08bf0, #b500fd);
+  box-shadow: 0 0 15px rgba(192, 139, 240, 0.8);
+}
+
+@media (max-width: 768px) {
+  .comentarios-container {
+    flex-direction: column;
+    width: 95%;
+  }
+}
+
+/* Seção GitHub */
+.github-container {
+  display: flex;
+  gap: 40px;
+  width: 90%;
+  max-width: 1200px;
+  align-items: center;
+}
+
+.github-card {
+  background: linear-gradient(135deg, rgba(34, 34, 34, 0.9), rgba(181, 0, 253, 0.2));
+  border: 2px solid #b500fd;
+  border-radius: 15px;
+  padding: 40px;
+  flex: 1;
+  box-shadow: 0 0 30px rgba(181, 0, 253, 0.4);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.github-icon {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.github-card h2 {
+  color: #c08bf0;
+  font-size: 1.8em;
+  margin: 15px 0;
+  text-shadow: 0 0 15px rgba(192, 139, 240, 0.6);
+}
+
+.github-card p {
+  color: #c08bf0;
+  margin: 15px 0 25px 0;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.github-btn {
+  background: linear-gradient(135deg, #00ff88, #00dd77);
+  color: black;
+  border: 2px solid #00ff88;
+  padding: 15px 35px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3s;
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+}
+
+.github-btn:hover {
+  background: linear-gradient(135deg, #00dd77, #00ff88);
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(0, 255, 136, 0.8);
+}
+
+.github-btn:active {
+  transform: scale(0.95);
+}
+
+.github-info {
+  background: linear-gradient(135deg, rgba(34, 34, 34, 0.9), rgba(192, 139, 240, 0.15));
+  border: 2px solid #b500fd;
+  border-radius: 15px;
+  padding: 30px;
+  flex: 1;
+  box-shadow: 0 0 25px rgba(181, 0, 253, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.github-info h3 {
+  color: #c08bf0;
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(192, 139, 240, 0.6);
+}
+
+.github-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.github-list li {
+  color: #c08bf0;
+  font-size: 1.05em;
+  padding: 12px 15px;
+  background: rgba(20, 20, 20, 0.6);
+  border-left: 4px solid #b500fd;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.github-list li:hover {
+  background: rgba(181, 0, 253, 0.1);
+  padding-left: 20px;
+}
+
+@media (max-width: 1024px) {
+  .github-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Seção Portfólio */
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.portfolio-card {
+  background: linear-gradient(135deg, rgba(34, 34, 34, 0.9), rgba(181, 0, 253, 0.2));
+  border: 2px solid #b500fd;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 0 25px rgba(181, 0, 253, 0.4);
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 35px rgba(181, 0, 253, 0.6);
+  border-color: #c08bf0;
+}
+
+.portfolio-icon {
+  font-size: 3em;
+  text-align: center;
+}
+
+.portfolio-card h3 {
+  color: #c08bf0;
+  font-size: 1.5em;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(192, 139, 240, 0.6);
+}
+
+.portfolio-card p {
+  color: #c08bf0;
+  margin: 0;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+.portfolio-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 0 0;
+}
+
+.tech-tag {
+  background: rgba(0, 255, 136, 0.2);
+  color: #00ff88;
+  border: 1px solid #00ff88;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  text-shadow: 0 0 5px rgba(0, 255, 136, 0.5);
+}
+
+.portfolio-link {
+  background: linear-gradient(135deg, #00ff88, #00dd77);
+  color: black;
+  border: 2px solid #00ff88;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.3s;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+  text-decoration: none;
+  text-align: center;
+  margin-top: auto;
+}
+
+.portfolio-link:hover {
+  background: linear-gradient(135deg, #00dd77, #00ff88);
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.8);
+}
+
+@media (max-width: 768px) {
+  .portfolio-container {
+    grid-template-columns: 1fr;
+    width: 95%;
+  }
 }
