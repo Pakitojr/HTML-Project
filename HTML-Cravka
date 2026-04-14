@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+   <title>𝕮𝖗𝖆𝖛𝖐𝖆</title>
+ </head>
+ <body>
+    <nav class="navbar">
+      <button class="nav-btn" onclick="mostrarSecao('home')">Home</button>
+      <button class="nav-btn" onclick="mostrarSecao('Cheats')">Cheats</button>
+      <button class="nav-btn" onclick="mostrarSecao('Discord')">Discord</button>
+      <button class="nav-btn" onclick="mostrarSecao('portfolio')">Portfólio</button>
+       <button class="nav-btn" onclick="mostrarSecao('portfolio')">Portfólio</button>
+    </nav>
+
+    <div class="container">
+      <div id="home" class="secao">
+        <h1>Welcome to 𝕮𝖗𝖆𝖛𝖐𝖆</h1>
+        <p>Creator: ♛ 𝕻𝖆𝖐𝖎𝖙𝖔 ♠</p>
+      </div>
+
+      <div id="Cheats" class="secao" style="display:none;">
+        <div class="cheats-container">
+          <div class="sidebar-cheats">
+            <h3>Cheats</h3>
+            <button class="sidebar-btn" onclick="mostrarCheat('cheat CS2')">Cheat CS2</button>
+            <button class="sidebar-btn" onclick="mostrarCheat('Cheat Rust')">Cheat Rust</button>
+            <button class="sidebar-btn" onclick="mostrarCheat('Injector Roblox')">Injector Roblox</button>
+            <button class="sidebar-btn" onclick="mostrarCheat('Xeno Injector Roblox')">Xeno Injectors Roblox</button>
+            <button class="sidebar-btn" onclick="mostrarCheat('cheat5')">Cheat 5</button>
+            <button class="sidebar-btn" onclick="mostrarCheat('cheat6')">Cheat 6</button>
+          </div>
+          
+          <div class="conteudo-cheats">
+            <div id="cheat CS2" class="cheat-item">
+              <h2>Cheat CS2</h2>
+              <p>Cheat for CS 2 - something that these days is looked by absolutely everyone. And it is true, once you played in CS2 you can not help but wonder how to download cheats for cs 2, because without them you can not simply play. There are different hacks for CS 2, both with cfg and without them, however, with our ExLoader website you will find both legit and rage hacks for hvh and legit games with legit cfg and rage configs. Of course all cs 2 hacks are virus free and many of them remain undetected from VAC ban! Even if you prefer console cheats for cs 2, you will still find what you are looking for. Our huge assortment will help you find a hack for cs 2 for any style of game. WH, AIM, Skinchanger, BHOP - an integral part of any quality cheat. Wallhack highlights enemies through walls, aimbot helps you with aiming, skinchanger replaces your default skins with cool free skins for cs 2, and bunnyhop helps with automatic jumps and auto strafes. Use of an injector such as GuidedHacking Injector for cs2 cheats is not needed, because they can be launched with help of ExLoader cheats loader (aka cs2 cheats launcher) (Unless we are talking about External cheats, as they, unlike internal cheats run without an injector). Rage cheat for cs 2 (also known as spinbot) is much cooler than console cheats for cs2, as it is designed for playing on hvh servers. Unlike other games, cs2 cheat-codes do not work in matchmaking, so you need some real cs2 hacks (like trainers) to play on community servers. Your desire to download cs 2 luno cheat, sharkhack cheat, osiris cs2, or Enigma cheat for cs 2 is totally natural, so we provide you with all free hacks for cs 2 without viruses on our site ExLoader!</p>
+              <code>Good Luck</code>
+              <button class="link-btn" onclick="window.open('https://en.exloader.net/tree/games/cs2/', '_blank')">Website</button>
+            </div>
+
+            <div id="Cheat Rust" class="cheat-item" style="display:none;">
+              <h2>Cheat Rust</h2>
+              <p>Rust cheats - it's hard to imagine what it's like to play Rust Pirate without hacks. Shootouts at great distances, bases with multilayer buffer layers, stashes - interaction with all this is greatly simplified once you've tried to download cheats for Rust. Almost any free hack for rust from the ExLoader website includes all the useful features, such as aimbot to help with aiming, wh (wallhack) to highlight enemies or loot through the walls and of course bhop and movement for fast movement. Most of the cheats for rust on our site created as hacks for rust pirate or cheat for rust devblog. Rust devblog cheat is a cheat for an older version of Rust (for example devblog 236, devblog 216 or devblog 289), where you can play with simplified graphics for weak pc without loss of fps on community servers, while enjoying your cheat for Rust. Some mods can be used as a cheat for rust on your phone or a cheat for rust steam. Although cheats for Steam rust is quite rare due to the lack of function ‘Bypass EAC anti-cheat in rust’, sometimes you can still find them. Cheat for rust alkad and cheat for MagicRust can only be downloaded on our site, because we publish only verified cheats for rust without viruses that do not lead to a game ban! From now on hacks for rust should no longer be a problem, click download rust cheats and enjoy your new gameplay!</p>
+              <code>Good Luck</code>
+              <button class="link-btn" onclick="window.open('https://en.exloader.net/tree/games/rust/', '_blank')">Website</button>
+            </div>
+
+            <div id="Injector Roblox" class="cheat-item" style="display:none;">
+              <h2>Injector Roblox</h2>
+              <p>Best website for Roblox exploits, a developers community, and more from WeAreDevs</p>
+              <code>Good Luck</code>
+              <button class="link-btn" onclick="window.open('https://wearedevs.net/exploits', '_blank')">Website</button>
+            </div>
+
+            <div id="Xeno Injector Roblox" class="cheat-item" style="display:none;">
+              <h2>Xeno Injector Roblox</h2>
+              <p>Xeno is a popular free, keyless Roblox Lua script executor (also called an injector) for Windows. It allows users to inject and run custom Lua scripts in Roblox games, giving advanced features like automation, GUIs, ESP, aimbots, and other modifications</p>
+              <code>Good Luck</code>
+              <button class="link-btn" onclick="window.open('https://xeno.onl/download', '_blank')">Website</button>
+            </div>
+
+            <div id="cheat5" class="cheat-item" style="display:none;">
+              <h2>Cheat 5</h2>
+              <p>Descrição do cheat 5 aqui...</p>
+              <code>Código: CHEAT5</code>
+            </div>
+
+            <div id="cheat6" class="cheat-item" style="display:none;">
+              <h2>Cheat 6</h2>
+              <p>Descrição do cheat 6 aqui...</p>
+              <code>Código: CHEAT6</code>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Discord" class="secao" style="display:none;">
+        <h1>Discord</h1>
+        <p>Entre em contato através dos canais abaixo</p>
+       <button class="link-btn" onclick="window.open('https://discord.gg/gnUbNVXsrE', '_blank')">Discord</button>
+      </div>
+
+      <div id="portfolio" class="secao" style="display:none;">
+        <h1>Meu Portfólio</h1>
+        <p>Conheça meus trabalhos e projetos</p>
+      </div>
+    </div>
+
+    <script>
+      function mostrarSecao(secao) {
+        // Esconder todas as seções
+        const secoes = document.querySelectorAll('.secao');
+        secoes.forEach(s => s.style.display = 'none');
+        
+        // Mostrar a seção selecionada
+        document.getElementById(secao).style.display = 'block';
+      }
+
+    
+
+      function mostrarCheat(cheat) {
+        // Esconder todos os cheats
+        const cheats = document.querySelectorAll('.cheat-item');
+        cheats.forEach(c => c.style.display = 'none');
+        
+        // Mostrar o cheat selecionado
+        document.getElementById(cheat).style.display = 'block';
+      }
+    </script>
+ </body>
+</html>
+
 
